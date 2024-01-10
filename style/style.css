@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body > .container {
+  text-align: center;
+}
+body > .container > h1 {
+  font-size: 45px;
+  font-family: cursive;
+}
+body > .container > img {
+  width: 50%;
+}
