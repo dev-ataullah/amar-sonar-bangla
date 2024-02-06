@@ -45,9 +45,134 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Massage Bubble Start -->
+    <style>
+      /* Styles for the messenger icon */
+      .messenger-icon {
+        position: fixed;
+        bottom: 30px; /* Adjust as needed */
+        left: 10px; /* Adjust as needed */
+        z-index: 9999; /* Ensures it's above other content */
+        cursor: pointer; /* Cursor style on hover */
+      }
+
+      .messenger-icon > img {
+        border-radius: 50px;
+        border: 3px solid #051225;
+        background-color: #fff;
+      }
+
+      /* Styles for the message window */
+      .message-window {
+        display: none; /* Hide by default */
+        position: fixed;
+        bottom: 80px; /* Adjust as needed */
+        left: 20px; /* Adjust as needed */
+        width: 320px; /* Adjust as needed */
+        height: 400px; /* Adjust as needed */
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 9998; /* Ensure it's below the icon */
+        border-radius: 15px;
+        padding: 15px;
+        font-family: sans-serif;
+      }
+      .message-window h2 {
+        font-size: 20px;
+        padding: 25px 0 10px;
+      }
+      .chatimg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      /* Styles for the close icon */
+      .close-icon {
+        /* position: absolute; */
+        top: 15px;
+        right: 15px;
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+      }
+      .logoimgsms {
+        /* position: absolute; */
+        top: 15px;
+        left: 15px;
+        width: 60px;
+        height: 60px;
+      }
+      .chatbutton {
+        background-color: #06a2d9;
+        padding: 12px 25px;
+        width: 100%;
+        border-radius: 10px;
+        color: white;
+        font-weight: bolder;
+      }
+      .chatbutton:hover {
+        color: white;
+      }
+    </style>
+
+    <script>
+      function toggleMessageWindow() {
+        var messageWindow = document.getElementById('messageWindow');
+        if (messageWindow.style.display === 'none') {
+          messageWindow.style.display = 'block';
+        } else {
+          messageWindow.style.display = 'none';
+        }
+      }
+
+      function closeMessageWindow() {
+        var messageWindow = document.getElementById('messageWindow');
+        messageWindow.style.display = 'none';
+      }
+    </script>
+    <!-- Massage Bubble End -->
   </head>
 
   <body>
+    <!-- Massage Bubble Start -->
+    <div class="messenger-icon" onclick="toggleMessageWindow()">
+      <!-- Replace the content inside the div with your icon or image -->
+      <img src="./img/sms.svg" alt="Messenger Icon" width="50" />
+    </div>
+
+    <!-- Message window -->
+    <div class="message-window" id="messageWindow">
+      <!-- Close icon -->
+      <div class="chatimg">
+        <img src="./img/activeLogo.svg" class="logoimgsms" alt="" />
+        <img
+          src="./img/minimize.svg"
+          class="close-icon"
+          alt="Close Icon"
+          onclick="closeMessageWindow()"
+        />
+      </div>
+      <!-- Your message window content goes here -->
+      <div>
+        <h2>Chat With Smile Dental Care</h2>
+        <p>
+          Hello sir/mam, আসসালামু আলাইকুম,<br />
+          স্মাইল ডেন্টাল কেয়ার এ আপনাকে স্বাগতম। সুস্থ দাঁতে সুন্দর হাঁসি অর্থাৎ
+          আপনার দাঁতের যে কোন সমস্যার জন্যে,আমরা আছি আপনার পাশে! <br />
+          আপনার দাতেঁর সমস্যা আমাদেরকে লিখে পাঠান। <br />
+          অথবা কল করুন :> 01401532018
+        </p>
+        <a
+          href="https://l.facebook.com/l.php?u=https%3A%2F%2Fm.me%2FSmileDental.Barishal%3Ffbclid%3DIwAR252C8TsKjysl2UkglHbAUV7YiExhhWvgfcpJ0SHluTAxQMW4ewgsn9WZ0&h=AT13S45wl1SnPO7LVW_CasfqK5yvisCqDaHbSm1gyqElQ8uXowX66BG6mQfl05wgfW4oCFxO_HIpk6H9uuve3cI22U9RhcORCCAIsODiRC9If767v8q-N28bm4D7DVnpHRm_bQ"
+          class="chatbutton"
+        >
+          Chat Now</a
+        >
+      </div>
+    </div>
+    <!-- Massage Bubble End -->
+
     <!-- Spinner Start -->
     <div
       id="spinner"
@@ -114,7 +239,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto py-0">
-          <a href="https://smiledentalbd.com/" class="nav-item nav-link active">Home</a>
+          <a href="https://smiledentalbd.com/" class="nav-item nav-link active"
+            >Home</a
+          >
           <a href="about" class="nav-item nav-link">About</a>
           <a href="service" class="nav-item nav-link">Service</a>
           <div class="nav-item dropdown">
