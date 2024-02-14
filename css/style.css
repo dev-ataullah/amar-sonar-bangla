@@ -5,6 +5,9 @@
   --light: #eef9ff;
   --dark: #091e3e;
 }
+body {
+  user-select: none;
+}
 
 h1,
 h2,
