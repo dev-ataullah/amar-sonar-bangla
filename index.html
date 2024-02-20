@@ -232,9 +232,10 @@
             <div class="dropdown-menu m-0">
               <a href="price" class="dropdown-item">Pricing Plan</a>
               <a href="team" class="dropdown-item">Our Dentist</a>
-              <a href="testimonial" class="dropdown-item">Testimonial</a>
+              <a href="blog" class="dropdown-item">Blog</a>
+              <a href="review" class="dropdown-item">Patient Review</a>
               <a href="appointment" class="dropdown-item">Appointment</a>
-              <a href="./apply" class="dropdown-item">Our Jobs</a>
+              <a href="apply" class="dropdown-item">Our Jobs</a>
             </div>
           </div>
           <a href="contact" class="nav-item nav-link">Contact</a>
@@ -307,12 +308,12 @@
                   Take The Best Quality Dental Treatment
                 </h1>
                 <a
-                  href="appointment"
+                  href="#appoinmentBox"
                   class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                   >Appointment</a
                 >
                 <a
-                  href=""
+                  href="contact"
                   class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
                   >Contact Us</a
                 >
@@ -333,12 +334,12 @@
                   Take The Best Quality Dental Treatment
                 </h1>
                 <a
-                  href="appointment"
+                  href="#appoinmentBox"
                   class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft"
                   >Appointment</a
                 >
                 <a
-                  href=""
+                  href="contact"
                   class="btn btn-secondary py-md-3 px-md-5 animated slideInRight"
                   >Contact Us</a
                 >
@@ -417,11 +418,19 @@
                 style="height: 40px"
               >
                 <option selected>Select A Service</option>
-                <option value="1">Service 1</option>
-                <option value="2">Service 2</option>
-                <option value="3">Service 3</option>
+                <option value="1">Root Canal Treatment</option>
+                <option value="2">Dental Consultations</option>
+                <option value="3">Pulpectomy</option>
+                <option value="4">Scaling ( Dental Wash )</option>
+                <option value="5">Polishing</option>
+                <option value="6">Orthodontist Treatment</option>
+                <option value="7">Crown (Cap)/ Bridge</option>
+                <option value="8">Cosmetic Filling</option>
+                <option value="9">GI Filling</option>
+                <option value="10">Teeth Whitening Services</option>
+                <option value="11">Others</option>
               </select>
-              <a class="btn btn-light" href="">Search Doctor</a>
+              <a class="btn btn-light" href="#teams">Search Doctor</a>
             </div>
           </div>
           <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
@@ -431,8 +440,8 @@
             >
               <h3 class="text-white mb-3">Make Appointment</h3>
               <p class="text-white">
-                Ipsum erat ipsum dolor clita rebum no rebum dolores labore,
-                ipsum magna at eos et eos amet.
+                To learn about oral and dental care services and to receive
+                services. can call
               </p>
               <h2 class="text-white mb-0">+880 1401 532018</h2>
             </div>
@@ -490,7 +499,7 @@
               </div>
             </div>
             <a
-              href="appointment"
+              href="#appoinmentBox"
               class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
               data-wow-delay="0.6s"
               >Make Appointment</a
@@ -510,7 +519,7 @@
       </div>
     </div>
     <!-- About End -->
-
+    <small id="appoinmentBox"></small>
     <!-- Appointment Start -->
     <div
       class="container-fluid bg-primary bg-appointment my-5 wow fadeInUp"
@@ -606,7 +615,7 @@
                     >
                       <!-- <option>Select Branches</option> -->
                       <option value="Select Branches">Select Branches</option>
-                      <option value="Dawatala">Dhaka Mirpur-12</option>
+                      <option value="Dhaka Mirpur-12">Dhaka Mirpur-12</option>
                       <option value="Barishal">Barishal</option>
                       <option value="Dawatala">Dawatala</option>
                     </select>
@@ -619,10 +628,31 @@
                       style="height: 55px"
                     >
                       <!-- <option >Select A Service</option> -->
-                      <option value="Select A Service">Select A Service</option>
-                      <option value="Teeth Whitening">Teeth Whitening</option>
-                      <option value="Dental Bridges">Dental Bridges</option>
-                      <option value="Root Cannel">Root Canal</option>
+                      <option value="Select A Service" selected>
+                        Select A Service
+                      </option>
+                      <option value="Root Canal Treatment">
+                        Root Canal Treatment
+                      </option>
+                      <option value="Dental Consultations">
+                        Dental Consultations
+                      </option>
+                      <option value="Pulpectomy">Pulpectomy</option>
+                      <option value="Scaling ( Dental Wash )">
+                        Scaling ( Dental Wash )
+                      </option>
+                      <option value="Polishing">Polishing</option>
+                      <option value="Orthodontist Treatment">
+                        Orthodontist Treatment
+                      </option>
+                      <option value="Crown (Cap)/ Bridge">
+                        Crown (Cap)/ Bridge
+                      </option>
+                      <option value="Cosmetic Filling">Cosmetic Filling</option>
+                      <option value="GI Filling">GI Filling</option>
+                      <option value="Teeth Whitening Services">
+                        Teeth Whitening Services
+                      </option>
                       <option value="Others">Others</option>
                     </select>
                   </div>
@@ -636,14 +666,18 @@
                     >
                       <!-- <option>Select Doctor</option> -->
                       <option value="Select Doctor">Select Doctor</option>
-                      <option value="DT. Ismail Hosen">DT. Ismail Hosen</option>
-                      <option value="DT. Ismail Hosen">
+                      <option value="Dr. Nishat Tasnim Barsha">
                         Dr. Nishat Tasnim Barsha
                       </option>
-                      <option value="DT. Ismail Hosen">Dr. Kaniz Fatema</option>
-                      <option value="DT. Rafiul Islam">
+                      <option value="Dr. Kaniz Fatema">Dr. Kaniz Fatema</option>
+                      <option value="Dr. Anjumanara Fatema">
+                        Dr. Anjumanara Fatema
+                      </option>
+                      <option value="Dt. Ismail Hosen">Dt. Ismail Hosen</option>
+                      <option value="Dt. Md Rafiul Islam">
                         Dt. Md Rafiul Islam
                       </option>
+                      <option value="Dt. Mst. Muslima">Dt. Mst. Muslima</option>
                       <option value="DT. Rifat Hosen">
                         Dt. F. Rifat Hasan
                       </option>
@@ -800,10 +834,17 @@
             >
               <h3 class="text-white mb-3">Make Appointment</h3>
               <p class="text-white mb-3">
-                Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est
-                magna stet eirmod
+                To learn about oral and dental care services and to receive
+                services. can call
               </p>
+
               <h2 class="text-white mb-0">+880 1401 532018</h2>
+              <a
+                href="#appoinmentBox"
+                class="btn btn-primary py-3 px-5 mt-4 wow zoomIn"
+                data-wow-delay="0.6s"
+                >Make Appointment</a
+              >
             </div>
           </div>
         </div>
@@ -1053,7 +1094,7 @@
     <!-- Testimonial End -->
 
     <!-- Team Start -->
-    <div class="container-fluid py-5">
+    <div id="teams" class="container-fluid py-5">
       <div class="container">
         <div class="row g-5">
           <!-- Dr describe ----- -->
