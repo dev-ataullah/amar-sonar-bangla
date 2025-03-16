@@ -46,27 +46,45 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
 
-<!--  Facebook Pixel setup code -->
+    <!--  Facebook Pixel setup code -->
 
     <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1192568672585115');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1192568672585115&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "1192568672585115");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1192568672585115&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 
-    
     <!-- Massage Bubble Start -->
     <style>
       /* Styles for the messenger icon */
@@ -696,7 +714,7 @@ src="https://www.facebook.com/tr?id=1192568672585115&ev=PageView&noscript=1"
                       <option value="Dr. Anjumanara Fatema">
                         Dr. Anjumanara Fatema
                       </option>
-                      <option value="Dt. Ismail Hosen">Dt. Ismail Hosen</option>
+                      <!-- <option value="Dt. Ismail Hosen">Dt. Ismail Hosen</option> -->
                       <option value="Dt. Md Rafiul Islam">
                         Dt. Md Rafiul Islam
                       </option>
@@ -1250,7 +1268,7 @@ src="https://www.facebook.com/tr?id=1192568672585115&ev=PageView&noscript=1"
           </div>
 
           <!-- Dt Fore  -->
-          <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+          <!-- <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
             <div class="team-item">
               <div class="position-relative rounded-top" style="z-index: 1">
                 <img
@@ -1277,7 +1295,7 @@ src="https://www.facebook.com/tr?id=1192568672585115&ev=PageView&noscript=1"
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- dt Five -->
           <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
